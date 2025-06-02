@@ -105,7 +105,7 @@ namespace SchoolCode1
                 int DaysInMonth = DateTime.DaysInMonth(Year, Month);
 
                 // Вывод заголовка
-                Console.WriteLine($"   {MonthString},{Year}");
+                Console.WriteLine($"   {MonthString}, {Year}");
                 Console.WriteLine("-----------------");
 
                 // Создание массива для хранения дней недели
