@@ -1,1 +1,1 @@
-<img src="/Console_Program_1.jpeg"></img>
+<img src="/Console_Program_1.jpg"></img>
