@@ -233,7 +233,15 @@ public class Company
 
     public void ChangeSalary(int id, double newSalary)
     {
-        Employee emp = Employees.Find(e => e.Id == id);
+        Employee emp = null;
+        foreach (var e in Employees)
+        {
+            if (e.Id == id)
+            {
+                emp = e;
+                break;
+            }
+        }
         if (emp != null)
         {
             emp.SetSalary(newSalary);
@@ -247,7 +255,15 @@ public class Company
 
     public void FireEmployee(int id)
     {
-        Employee emp = Employees.Find(e => e.Id == id);
+        Employee emp = null;
+        foreach (var e in Employees)
+        {
+            if (e.Id == id)
+            {
+                emp = e;
+                break;
+            }
+        }
         if (emp != null)
         {
             Employees.Remove(emp);
